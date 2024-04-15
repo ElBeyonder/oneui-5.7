@@ -1,0 +1,20 @@
+//
+// Simplebar - https://github.com/Grsmto/simplebar
+// --------------------------------------------------
+
+// Style Overrides
+.simplebar-scrollbar {
+    left: auto;
+    right: 2px;
+    width: 5px;
+}
+
+.simplebar-scrollbar::before {
+    left: 0;
+    right: 0;
+    background: gray('400');
+}
+
+.simplebar-track .simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}

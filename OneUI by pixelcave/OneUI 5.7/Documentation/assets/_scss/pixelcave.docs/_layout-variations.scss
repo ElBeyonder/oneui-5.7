@@ -1,0 +1,27 @@
+//
+// Layout Variations
+// --------------------------------------------------
+
+#page-container {
+    // Sidebar and side overlay related
+    @include media-breakpoint-up(lg) {
+        &.sidebar-o {
+            padding-left: $sidebar-width;
+        }
+    }
+
+    // Side Scroll
+    &.side-scroll {
+        #sidebar {
+            overflow-y: visible;
+        }
+
+        @include media-breakpoint-up(lg) {
+            #sidebar {
+                .content-side {
+                    width: $sidebar-width !important;
+                }
+            }
+        }
+    }
+}
